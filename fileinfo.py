@@ -75,7 +75,7 @@ def listDirectory (directory, fileExtList):
         return [getFileInfoClass(f)(f) for f in fileList]
     
 if __name__ == '__main__':
-    for info in listDirectory("~/Music", [".mp3"]):
+    for info in listDirectory("/home/rnslucas/Music", [".mp3"]):
         print "\n".join(["%s=%s" % (k,v) for k, v in info.items()])
         print
         
